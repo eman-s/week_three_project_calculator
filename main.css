@@ -1,75 +1,83 @@
-.btn{
-  background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 20px 35px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 100;
+.btn {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 20px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-.display{
-  background-color: #4CAF50; /* Green */
-    border: none;
-    color: white;
-    padding: 20px 0px;
-    text-align: right;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 3px;
-    cursor: pointer;
-    font-size: 30px;
-    font-weight: 100;
-}
-.clear{
-  margin-right:0px;
+.display {
+  background-color: #4CAF50;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 20px 0px;
+  text-align: right;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 3px;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 100;
 }
 
-td{
+.clear {
+  margin-right: 0px;
+}
+
+td {
   border-style: solid;
   border-color: white;
   border-width: thin;
-
 }
 
-table{
+table {
   border-collapse: collapse;
   background-color: #4CAF50;
 }
 
+.cldisp_td1 {
+  border-bottom-color: #4CAF50;
+}
 
-.cldisp_td1{
+.cldisp_td2 {
   border-bottom-color: #4CAF50;
 }
-.cldisp_td2{
-  border-bottom-color: #4CAF50;
-}
-.divide{
-  color:black;
+
+.divide {
+  color: black;
   background-color: #79af7a;
 }
-.multiply{
-  color:black;
+
+.multiply {
+  color: black;
   background-color: #79af7a;
 }
-.add{
-  color:black;
+
+.add {
+  color: black;
   background-color: #79af7a;
 }
-.subtract{
-  color:black;
+
+.subtract {
+  color: black;
   background-color: #79af7a;
 }
-input::placeholder{
-  color:white;
+
+input::placeholder {
+  color: white;
   padding-right: 5px;
 }
-.funct{
+
+.funct {
   background-color: #79af7a;
 }
