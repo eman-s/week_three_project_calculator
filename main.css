@@ -2,32 +2,38 @@
   background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 30px 47px;
+    padding: 20px 35px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    font-size: 30px;
+    font-weight: 100;
 }
 
 .display{
   background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 30px 47px;
-     padding-left: 114px;
+    padding: 20px 0px;
     text-align: right;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 4px 3px;
     cursor: pointer;
+    font-size: 30px;
+    font-weight: 100;
+}
+.clear{
+  margin-right:0px;
 }
 
 td{
   border-style: solid;
-  border-color: black;
+  border-color: white;
   border-width: thin;
 
 }
@@ -43,4 +49,27 @@ table{
 }
 .cldisp_td2{
   border-bottom-color: #4CAF50;
+}
+.divide{
+  color:black;
+  background-color: #79af7a;
+}
+.multiply{
+  color:black;
+  background-color: #79af7a;
+}
+.add{
+  color:black;
+  background-color: #79af7a;
+}
+.subtract{
+  color:black;
+  background-color: #79af7a;
+}
+input::placeholder{
+  color:white;
+  padding-right: 5px;
+}
+.funct{
+  background-color: #79af7a;
 }

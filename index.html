@@ -3,36 +3,16 @@
 
 <head>
   <link rel="stylesheet" href="main.css">
+  <style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+</style>
   <meta charset="utf-8">
   <title>Calculator</title>
 </head>
 
 <body>
-  <div class="wrapper">
-    <!-- <form class="calculator">
-      <input type="reset" onclick="" value="C">
-      <input type="text" id="display" name="number display" placeholder="math">
-      <br>
-      <input id="btn seven" type="button" onclick="" value="7">
-      <input id="btn eight" type="button" onclick="" value="8">
-      <input id="btn nine" type="button" onclick="" value="9">
-      <input id="btn divide" type="button" onclick="" value="/">
-      <br>
-      <input id="btn four" type="button" onclick="" value="4">
-      <input id="btn five" type="button" onclick="" value="5">
-      <input id="btn six" type="button" onclick="" value="6">
-      <input id="btn multiply" type="button" onclick="" value="x">
-      <br>
-      <input id="btn one" type="button" onclick="" value="1">
-      <input id="btn two" type="button" onclick="" value="2">
-      <input id="btn three" type="button" onclick="" value="1">
-      <input id="btn subtract" type="button" onclick="" value="-">
-      <br>
-      <input id="btn zero" type="button" onclick="" value="0">
-      <input id="btn decimal" type="button" onclick="" value=".">
-      <input id="btn equals" type="submit" onclick="" value="=">
-      <input id="btn add" type="button" onclick="" value="+"> -->
 
+  <div class="wrapper">
       <table id="cldisp" >
         <tr>
           <td class="cldisp_td1">
@@ -54,8 +34,8 @@
           <td>
           <button class="btn seven" type="button" onclick="" name="button">9</button>
           </td>
-          <td>
-          <button class="btn seven" type="button" onclick="" name="button">/</button>
+          <td class="funct box1">
+          <button class="btn divide" type="button" onclick="" name="button">/</button>
           </td>
         </tr>
         <tr>
@@ -68,8 +48,8 @@
           <td>
           <button class="btn seven" type="button" onclick="" name="button">6</button>
           </td>
-          <td>
-          <button class="btn seven" type="button" onclick="" name="button">x</button>
+          <td class="funct box2">
+          <button class="btn multiply" type="button" onclick="" name="button">x</button>
           </td>
         </tr>
         <tr>
@@ -82,8 +62,8 @@
           <td>
           <button class="btn seven" type="button" onclick="" name="button">3</button>
           </td>
-          <td>
-          <button class="btn seven" type="button" onclick="" name="button">-</button>
+          <td class="funct box3">
+          <button class="btn subtract" type="button" onclick="" name="button">-</button>
           </td>
         </tr>
         <tr>
@@ -94,13 +74,13 @@
           <button class="btn seven" type="button" onclick="" name="button">.</button>
           </td>
           <td>
-          <button class="btn seven" type="button" onclick="" name="button">=</button>
+          <button class="btn quals" type="button" onclick="" name="button">=</button>
           </td>
-          <td>
-          <button class="btn seven" type="button" onclick="" name="button">+</button>
+          <td class="funct box4">
+          <button class="btn add" type="button" onclick="" name="button">+</button>
           </td>
         </tr>
-      </table> 
+      </table>
 
 
     <!-- </form>
