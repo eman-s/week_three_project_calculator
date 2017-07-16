@@ -1,0 +1,46 @@
+.btn{
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 47px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.display{
+  background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 30px 47px;
+     padding-left: 114px;
+    text-align: right;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+td{
+  border-style: solid;
+  border-color: black;
+  border-width: thin;
+
+}
+
+table{
+  border-collapse: collapse;
+  background-color: #4CAF50;
+}
+
+
+.cldisp_td1{
+  border-bottom-color: #4CAF50;
+}
+.cldisp_td2{
+  border-bottom-color: #4CAF50;
+}
