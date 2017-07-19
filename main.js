@@ -1,15 +1,20 @@
 
 let display = document.querySelector(".display");
-let btn = document.querySelector(".btn");
+
+let btnParent = document.querySelector(".calculator")
+
+let displayValue= display.value;
+
+btnParent.addEventListener('click', function(e){
+    console.log(e.target.value);
+
+});
 
 
-
-btn.addEventListener("click", printToScreen);
-function printToScreen (){
-  let btnValue  = btn.value;
-  let displayValue= display.value;
-
-  btnValue.forEach(function(number){
-    console.log("the value is: ", number)
-  })
-}
+// btn.addEventListener("click", printToScreen);
+// function printToScreen (){
+//
+//
+//   console.log(btnValue);
+//
+//   }
