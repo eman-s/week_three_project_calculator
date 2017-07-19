@@ -4,23 +4,20 @@ let display = document.querySelector(".display");
 let btnParent = document.querySelector(".calculator")
 
 
-btnParent.addEventListener('click', function(e){
-    let buttonValue = e.target.innerHTML;
+
+
+
+  btnParent.addEventListener('click', function(e){
+    var magicalBox = []
+    let buttonValue = e.target.value;
     
-    console.log(buttonValue);
     display.value += buttonValue;
-    if(buttonValue === "C"){
-      display.value = ""
-    }
+    magicalBox.push(buttonValue);
+    console.log(magicalBox);
 
 
-});
 
 
-// btn.addEventListener("click", printToScreen);
-// function printToScreen (){
-//
-//
-//   console.log(btnValue);
-//
-//   }
+
+
+  });
