@@ -3,10 +3,16 @@ let display = document.querySelector(".display");
 
 let btnParent = document.querySelector(".calculator")
 
-let displayValue= display.value;
 
 btnParent.addEventListener('click', function(e){
-    console.log(e.target.value);
+    let buttonValue = e.target.innerHTML;
+    
+    console.log(buttonValue);
+    display.value += buttonValue;
+    if(buttonValue === "C"){
+      display.value = ""
+    }
+
 
 });
 
