@@ -25,9 +25,4 @@ let clear = document.querySelector(".clear")
 
           equals.addEventListener("click", getSolution);
           clear.addEventListener("click", clearScreen);
-
-
-
-
-
   });
