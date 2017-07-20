@@ -2,27 +2,44 @@ let display = document.querySelector(".display");
 let btnParent = document.querySelector(".calculator")
 let equals = document.querySelector(".equals")
 let clear = document.querySelector(".clear")
+let button = document.querySelectorAll(".btn")
 
+var magicalBox = []
+var numbers =[]
 
-  btnParent.addEventListener('click', function(e){
-        var magicalBox = []
-        let buttonValue = e.target.value;
+for (var i = 0; i < button.length; i++) {
+  button[i].addEventListener("click", getUserInput);
+}
 
-          display.value += buttonValue;
-          magicalBox.push(display.value);
-          console.log(magicalBox);
-          let magicalString = magicalBox.toString();
-          console.log(magicalString);
+function getUserInput(event) {
+  let buttonValue = event.target.value;
+  display.value += buttonValue;
+}
 
-          function getSolution(){
-          let magicalSolution = eval(magicalString);
-          console.log(magicalSolution);
-          display.value = magicalSolution;
-          }
-          function clearScreen(){
-              display.value = "";
-          }
+function getSolution() {
+    magicalBox.push(display.value);
+    // console.log(magicalBox);
+    let magicalString = magicalBox.toString();
+    // console.log(magicalString);
+    let stringyArray = magicalString.split("");
+    // console.log(stringyArray)
+  for(i = 0; i < stringyArray.length; i++){
+    if (stringyArray[i] !== "+" && stringyArray[i] !== "-" && stringyArray[i] !== "*" && stringyArray[i] !== "/" && stringyArray[i] !== "." ){
+      stringyArray[i] = parseInt(stringyArray[i])
+      if (stringyArray[i] === "*"]){
+        
+      }
+    }
+  }
+console.log(stringyArray)
+}
 
-          equals.addEventListener("click", getSolution);
-          clear.addEventListener("click", clearScreen);
-  });
+function clearScreen() {
+  display.value = "";
+  magicalBox =[]
+  numbers =[]
+
+}
+
+equals.addEventListener("click", getSolution);
+clear.addEventListener("click", clearScreen);
