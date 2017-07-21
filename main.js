@@ -30,6 +30,7 @@ function doMath(){
     var thisSolution = (magicalBox[startingIndex -1] + magicalBox[startingIndex +1]);
     display.value = thisSolution;
     magicalBox.splice(0,3, thisSolution);
+    // thisSolution.splice(0,2)
     console.log(thisSolution);
     console.log(magicalBox);
   }else if (magicalBox.includes('-')){
@@ -37,18 +38,21 @@ function doMath(){
     var thisSolution = (magicalBox[startingIndex -1] - magicalBox[startingIndex +1]);
     display.value = thisSolution;
     magicalBox.splice(0,3, thisSolution)
+    // thisSolution.splice(0,2)
     console.log(thisSolution);
   }else if (magicalBox.includes('*')){
     let startingIndex = magicalBox.indexOf('*');
     var thisSolution = (magicalBox[startingIndex -1] * magicalBox[startingIndex +1]);
     display.value = thisSolution;
     magicalBox.splice(0,3, thisSolution)
+    // thisSolution.splice(0,2)
     console.log(thisSolution);
   }else if (magicalBox.includes('/')){
     let startingIndex = magicalBox.indexOf('/');
     var thisSolution = (magicalBox[startingIndex -1] / magicalBox[startingIndex +1]);
     display.value = thisSolution;
     magicalBox.splice(0,3, thisSolution)
+    // thisSolution.splice(0,2)
     console.log(thisSolution);
   }
 }
@@ -62,11 +66,9 @@ function getSolution() {
 
   }
   // for(i = 0; i<magicalBox.length; i++){
-    console.log(magicalBox)
+    console.log("solution is ",magicalBox)
     doMath();
   // }
-
-
 }
 
 
