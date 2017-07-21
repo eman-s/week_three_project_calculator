@@ -10,7 +10,6 @@ var magicalBox = []
 
 for (var i = 0; i < button.length; i++) {
   button[i].addEventListener("click", getUserInput);
-
 }
 
 function getUserInput(event) {
@@ -19,7 +18,6 @@ function getUserInput(event) {
   if(buttonValue !== ""){
     magicalBox.push(buttonValue)
   }
-
 }
 
 function getSolution() {
@@ -53,14 +51,12 @@ function getSolution() {
       console.log(thisSolution);
     }
   }
-
 }
 
 
 function clearScreen() {
   display.value = "";
   magicalBox =[]
-  numbers =[]
 
 }
 
