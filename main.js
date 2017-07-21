@@ -5,34 +5,57 @@ let clear = document.querySelector(".clear")
 let button = document.querySelectorAll(".btn")
 
 var magicalBox = []
-var numbers =[]
+
+
 
 for (var i = 0; i < button.length; i++) {
   button[i].addEventListener("click", getUserInput);
+
 }
 
 function getUserInput(event) {
   let buttonValue = event.target.value;
-  display.value += buttonValue;
+  display.value += buttonValue
+  if(buttonValue !== ""){
+    magicalBox.push(buttonValue)
+  }
+
 }
 
 function getSolution() {
-    magicalBox.push(display.value);
-    // console.log(magicalBox);
-    let magicalString = magicalBox.toString();
-    // console.log(magicalString);
-    let stringyArray = magicalString.split("");
-    // console.log(stringyArray)
-  for(i = 0; i < stringyArray.length; i++){
-    if (stringyArray[i] !== "+" && stringyArray[i] !== "-" && stringyArray[i] !== "*" && stringyArray[i] !== "/" && stringyArray[i] !== "." ){
-      stringyArray[i] = parseInt(stringyArray[i])
-      if (stringyArray[i] === "*"]){
-        
-      }
+  for(i = 0; i<magicalBox.length; i++){
+    if (magicalBox[i] !== "+" && magicalBox[i] !== "-" && magicalBox[i] !== "*" && magicalBox[i] !== "/" && magicalBox[i] !== "." ){
+      magicalBox[i] = parseInt(magicalBox[i])
+      console.log(magicalBox)
+    }
+    if (magicalBox.includes('+')){
+      let startingIndex = magicalBox.indexOf('+');
+      var thisSolution = (magicalBox[startingIndex -1] + magicalBox[startingIndex +1]);
+      display.value = thisSolution;
+      console.log(thisSolution);
+    }
+    if (magicalBox.includes('-')){
+      let startingIndex = magicalBox.indexOf('-');
+      var thisSolution = (magicalBox[startingIndex -1] - magicalBox[startingIndex +1]);
+      display.value = thisSolution;
+      console.log(thisSolution);
+    }
+    if (magicalBox.includes('*')){
+      let startingIndex = magicalBox.indexOf('*');
+      var thisSolution = (magicalBox[startingIndex -1] * magicalBox[startingIndex +1]);
+      display.value = thisSolution;
+      console.log(thisSolution);
+    }
+    if (magicalBox.includes('/')){
+      let startingIndex = magicalBox.indexOf('/');
+      var thisSolution = (magicalBox[startingIndex -1] / magicalBox[startingIndex +1]);
+      display.value = thisSolution;
+      console.log(thisSolution);
     }
   }
-console.log(stringyArray)
+
 }
+
 
 function clearScreen() {
   display.value = "";
